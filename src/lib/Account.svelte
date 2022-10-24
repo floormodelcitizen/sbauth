@@ -68,6 +68,7 @@
       loading = false;
     }
   };
+  console.log(session.user.id + ", " + session.user.email);
 </script>
 
 <form on:submit|preventDefault={updateProfile} class="form-widget">
@@ -88,10 +89,7 @@
       {loading ? "Saving ..." : "Update profile"}
     </button>
   </div>
-  <button
-    type="button"
-    class="button block"
-    on:click={() => supabase.auth.signOut()}>
+  <button type="button" class="button block" on:click={() => supabase.auth.signOut()}>
     Sign Out
   </button>
 </form>
