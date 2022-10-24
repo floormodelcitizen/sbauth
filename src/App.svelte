@@ -16,6 +16,7 @@
       session = _session;
     });
   });
+  // console.log(session.user.id + ", " + session.user.email);
 </script>
 
 <div class="container" style="padding: 50px 0 100px 0">
